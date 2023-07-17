@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
   
   <title>Frontend Mentor | Interactive rating component</title>
 
@@ -18,30 +19,31 @@
   </style>
 </head>
 <body>
+  
 
   <!-- Rating state start -->
 
-   <div class="main-container">
+   <div class="main-container" id="mainContainer">
 
-    <div class="rate-container">
+    <div class="rate-container" id="rateContainer">
       <img class="icon-star" src="./images/icon-star.svg" alt="">
       <h1>How did we do?</h1>
       <p>  Please let us know how we did with your support request. All feedback is appreciated 
         to help us improve our offering!</p>
       <ul>
-      <li><button>1</button></li>
-      <li><button>2</button></li>
-      <li><button>3</button></li>
-      <li><button>4</button></li>
-      <li><button>5</button></li>
+      <li><button class="btn">1</button></li>
+      <li><button class="btn">2</button></li>
+      <li><button class="btn">3</button></li>
+      <li><button class="btn">4</button></li>
+      <li><button class="btn">5</button></li>
     </ul>
-    <button class="main-submit">Submit</button>
+    <button class="main-submit" id="submiting">Submit</button>
     </div>
 
-    <div class="thank-you">
+    <div class="thank-you hidden" id="thankYou">
       <img class="thank-you-img" src="./images/illustration-thank-you.svg" alt="">
       <h2>Thank you!</h2>
-      <p class="selectParagraph">You selected <!-- Add rating here --> out of 5</p>
+      <p class="selectParagraph">You selected <!-- Add rating here --> <span id="rating"></span> out of 5</p>
       <p class="appreciate"> We appreciate you taking the time to give a rating. If you ever need more support, 
         don’t hesitate to get in touch!</p>
     </div>
@@ -62,5 +64,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/alialperakay">Alper Akay</a>.
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
